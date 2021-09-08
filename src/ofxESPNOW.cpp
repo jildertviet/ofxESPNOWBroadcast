@@ -1,0 +1,3 @@
+ofxESPNOWSender::ofxESPNOWSender(){
+    
+}
