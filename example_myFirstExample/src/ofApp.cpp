@@ -3,6 +3,7 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
+  cout << "First" << endl;
     sender.init();
     ofSetFrameRate(30);
     cout << "Starting ofxESPNOW example" << endl;
@@ -12,7 +13,7 @@ void ofApp::setup(){
 void ofApp::update(){
     if(ofGetFrameNum() % 30 == 0){
         cout << "Send" << endl;
-        sender.send();
+        // sender.send();
     }
 }
 
@@ -62,6 +63,6 @@ void ofApp::gotMessage(ofMessage msg){
 }
 
 //--------------------------------------------------------------
-void ofApp::dragEvent(ofDragInfo dragInfo){ 
+void ofApp::dragEvent(ofDragInfo dragInfo){
 
 }

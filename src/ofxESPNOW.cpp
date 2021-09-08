@@ -1,4 +1,5 @@
 #include "ofxESPNOW.h"
+#include <iostream>     // std::cout, std::end
 
 using namespace std;
 
@@ -9,16 +10,21 @@ static uint8_t ESP_mac[6] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF};
 uint8_t payload[127];
 
 ofxESPNOWSender::ofxESPNOWSender(){
-    
+
 }
 
 void ofxESPNOWSender::init(){
-    string ifNameString = "wlan0";
-    char* ifName = new char[ifNameString.length()];
+  nice(-20);
+  
+    string ifNameString = "wlxe894f61bf4fd";
+    cout << ifNameString.length() << endl;
+    char* ifName = new char[ifNameString.length() + 1];
+    strcpy(ifName, ifNameString.c_str());
+
     handler = new ESPNOW_manager(ifName, DATARATE_24Mbps, CHANNEL_freq_9, my_mac, dest_mac, false);
-    handler->set_filter(ESP_mac, dest_mac);
+    // handler->set_filter(ESP_mac, dest_mac);
 //    handler->set_recv_callback(&callback);
-    handler->start();
+    // handler->start();
 }
 
 void ofxESPNOWSender::exit(){
