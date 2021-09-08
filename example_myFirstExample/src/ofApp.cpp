@@ -4,7 +4,7 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
     sender.init();
-    ofSetFramerate(30);
+    ofSetFrameRate(30);
     cout << "Starting ofxESPNOW example" << endl;
 }
 
