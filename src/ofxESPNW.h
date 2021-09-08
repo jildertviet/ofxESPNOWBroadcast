@@ -1,4 +1,0 @@
-class ofxESPNOWSender{
-public:
-    ofxESPNOWSender();
-};

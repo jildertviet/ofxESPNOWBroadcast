@@ -3,12 +3,17 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-
+    sender.init();
+    ofSetFramerate(30);
+    cout << "Starting ofxESPNOW example" << endl;
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-
+    if(ofGetFrameNum() % 30 == 0){
+        cout << "Send" << endl;
+        sender.send();
+    }
 }
 
 //--------------------------------------------------------------

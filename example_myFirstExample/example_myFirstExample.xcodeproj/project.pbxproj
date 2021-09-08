@@ -9,7 +9,7 @@
 		<string>46</string>
 		<key>objects</key>
 		<dict>
-			<key>39C7E8538D84E36B7E10AE41</key>
+			<key>3229EDFA4980063C84339D98</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -18,9 +18,9 @@
 				<key>isa</key>
 				<string>PBXFileReference</string>
 				<key>name</key>
-				<string>ofxESPNW.h</string>
+				<string>ofxESPNOW.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxESPNOW/src/ofxESPNW.h</string>
+				<string>../../../addons/ofxESPNOW/src/ofxESPNOW.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -29,7 +29,7 @@
 				<key>children</key>
 				<array>
 					<string>84D004324365B142CE7A2E5D</string>
-					<string>39C7E8538D84E36B7E10AE41</string>
+					<string>3229EDFA4980063C84339D98</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
@@ -60,43 +60,14 @@
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>4D24C6FA882EFCE47B9D0C9D</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>4</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>lib_implementation.h</string>
-				<key>path</key>
-				<string>../../../addons/ofxESPNOW/libs/necessaryLib/src/lib_implementation.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>DC7BF5E775285CA89CD3513C</key>
-			<dict>
-				<key>children</key>
-				<array>
-					<string>96CBFFF737A5997618472761</string>
-					<string>4D24C6FA882EFCE47B9D0C9D</string>
-				</array>
-				<key>isa</key>
-				<string>PBXGroup</string>
-				<key>name</key>
-				<string>src</string>
-				<key>sourceTree</key>
-				<string>&lt;group&gt;</string>
-			</dict>
-			<key>5A770E555858278E14817593</key>
+			<key>AA176F84D9348D774A8BDCB1</key>
 			<dict>
 				<key>fileRef</key>
-				<string>96CBFFF737A5997618472761</string>
+				<string>75DBD4BF70BFD54FDD106A29</string>
 				<key>isa</key>
 				<string>PBXBuildFile</string>
 			</dict>
-			<key>96CBFFF737A5997618472761</key>
+			<key>75DBD4BF70BFD54FDD106A29</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.cpp.cpp</string>
@@ -105,36 +76,104 @@
 				<key>isa</key>
 				<string>PBXFileReference</string>
 				<key>name</key>
-				<string>lib_implementation.cpp</string>
+				<string>main.cpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxESPNOW/libs/necessaryLib/src/lib_implementation.cpp</string>
+				<string>../../../addons/ofxESPNOW/libs/ESPNOW_lib/src/main.cpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>7312A16DD67060CE593A1219</key>
+			<key>72720557FF8B657B07FB13F6</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>4</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ESPNOW_types.h</string>
+				<key>path</key>
+				<string>../../../addons/ofxESPNOW/libs/ESPNOW_lib/src/Includes/ESPNOW_types.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>17451345453C9F56C0F3899C</key>
 			<dict>
 				<key>children</key>
 				<array>
-					<string>6888D0F14ED0F36C6090D2E8</string>
+					<string>3AE8B313D0619D65F58D1B32</string>
+					<string>72720557FF8B657B07FB13F6</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
 				<key>name</key>
-				<string>include</string>
+				<string>Includes</string>
 				<key>sourceTree</key>
 				<string>&lt;group&gt;</string>
 			</dict>
-			<key>4A07AA5BEECB7C5A10ADC6DE</key>
+			<key>3AE8B313D0619D65F58D1B32</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>4</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ESPNOW_manager.h</string>
+				<key>path</key>
+				<string>../../../addons/ofxESPNOW/libs/ESPNOW_lib/src/Includes/ESPNOW_manager.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>25EA7089D4B75A2DA58902F8</key>
+			<dict>
+				<key>fileRef</key>
+				<string>FB9110322C90A942D4C1320A</string>
+				<key>isa</key>
+				<string>PBXBuildFile</string>
+			</dict>
+			<key>FB9110322C90A942D4C1320A</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.cpp.cpp</string>
+				<key>fileEncoding</key>
+				<string>4</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ESPNOW_types.cpp</string>
+				<key>path</key>
+				<string>../../../addons/ofxESPNOW/libs/ESPNOW_lib/src/ESPNOW_types.cpp</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>AD793109F0F09AE36C003239</key>
 			<dict>
 				<key>children</key>
 				<array>
-					<string>7312A16DD67060CE593A1219</string>
-					<string>DC7BF5E775285CA89CD3513C</string>
+					<string>6D2B14AD374A454521B94309</string>
+					<string>FB9110322C90A942D4C1320A</string>
+					<string>17451345453C9F56C0F3899C</string>
+					<string>75DBD4BF70BFD54FDD106A29</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
 				<key>name</key>
-				<string>necessaryLib</string>
+				<string>src</string>
+				<key>sourceTree</key>
+				<string>&lt;group&gt;</string>
+			</dict>
+			<key>831B98BF958D212340E4D82A</key>
+			<dict>
+				<key>children</key>
+				<array>
+					<string>AD793109F0F09AE36C003239</string>
+				</array>
+				<key>isa</key>
+				<string>PBXGroup</string>
+				<key>name</key>
+				<string>ESPNOW_lib</string>
 				<key>sourceTree</key>
 				<string>&lt;group&gt;</string>
 			</dict>
@@ -142,7 +181,7 @@
 			<dict>
 				<key>children</key>
 				<array>
-					<string>4A07AA5BEECB7C5A10ADC6DE</string>
+					<string>831B98BF958D212340E4D82A</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
@@ -165,18 +204,25 @@
 				<key>sourceTree</key>
 				<string>&lt;group&gt;</string>
 			</dict>
-			<key>6888D0F14ED0F36C6090D2E8</key>
+			<key>C4C0797F24E91B0750275B20</key>
+			<dict>
+				<key>fileRef</key>
+				<string>6D2B14AD374A454521B94309</string>
+				<key>isa</key>
+				<string>PBXBuildFile</string>
+			</dict>
+			<key>6D2B14AD374A454521B94309</key>
 			<dict>
 				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
+				<string>sourcecode.cpp.cpp</string>
 				<key>fileEncoding</key>
 				<string>4</string>
 				<key>isa</key>
 				<string>PBXFileReference</string>
 				<key>name</key>
-				<string>necessaryLib.h</string>
+				<string>ESPNOW_manager.cpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxESPNOW/libs/necessaryLib/include/necessaryLib.h</string>
+				<string>../../../addons/ofxESPNOW/libs/ESPNOW_lib/src/ESPNOW_manager.cpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -352,12 +398,9 @@ fi
 						<string>src</string>
 						<string>src</string>
 						<string>../../../addons/ofxESPNOW/libs</string>
-						<string>../../../addons/ofxESPNOW/libs/necessaryLib</string>
-						<string>../../../addons/ofxESPNOW/libs/necessaryLib/include</string>
-						<string>../../../addons/ofxESPNOW/libs/necessaryLib/lib</string>
-						<string>../../../addons/ofxESPNOW/libs/necessaryLib/lib/osx</string>
-						<string>../../../addons/ofxESPNOW/libs/necessaryLib/lib/win_cb</string>
-						<string>../../../addons/ofxESPNOW/libs/necessaryLib/src</string>
+						<string>../../../addons/ofxESPNOW/libs/ESPNOW_lib</string>
+						<string>../../../addons/ofxESPNOW/libs/ESPNOW_lib/src</string>
+						<string>../../../addons/ofxESPNOW/libs/ESPNOW_lib/src/Includes</string>
 						<string>../../../addons/ofxESPNOW/src</string>
 					</array>
 					<key>MACOSX_DEPLOYMENT_TARGET</key>
@@ -403,12 +446,9 @@ fi
 						<string>src</string>
 						<string>src</string>
 						<string>../../../addons/ofxESPNOW/libs</string>
-						<string>../../../addons/ofxESPNOW/libs/necessaryLib</string>
-						<string>../../../addons/ofxESPNOW/libs/necessaryLib/include</string>
-						<string>../../../addons/ofxESPNOW/libs/necessaryLib/lib</string>
-						<string>../../../addons/ofxESPNOW/libs/necessaryLib/lib/osx</string>
-						<string>../../../addons/ofxESPNOW/libs/necessaryLib/lib/win_cb</string>
-						<string>../../../addons/ofxESPNOW/libs/necessaryLib/src</string>
+						<string>../../../addons/ofxESPNOW/libs/ESPNOW_lib</string>
+						<string>../../../addons/ofxESPNOW/libs/ESPNOW_lib/src</string>
+						<string>../../../addons/ofxESPNOW/libs/ESPNOW_lib/src/Includes</string>
 						<string>../../../addons/ofxESPNOW/src</string>
 					</array>
 					<key>ICON</key>
@@ -428,8 +468,6 @@ fi
 						<string>$(OF_CORE_LIBS)</string>
 						<string>$(OF_CORE_FRAMEWORKS)</string>
 						<string>$(LIB_OF)</string>
-						<string>../../../addons/ofxESPNOW/libs/necessaryLib/lib/osx/static_necessaryLib1.a</string>
-						<string>../../../addons/ofxESPNOW/libs/necessaryLib/lib/osx/static_necessaryLib2.a</string>
 					</array>
 					<key>PRODUCT_NAME</key>
 					<string>$(TARGET_NAME)</string>
@@ -3215,12 +3253,9 @@ fi
 						<string>src</string>
 						<string>src</string>
 						<string>../../../addons/ofxESPNOW/libs</string>
-						<string>../../../addons/ofxESPNOW/libs/necessaryLib</string>
-						<string>../../../addons/ofxESPNOW/libs/necessaryLib/include</string>
-						<string>../../../addons/ofxESPNOW/libs/necessaryLib/lib</string>
-						<string>../../../addons/ofxESPNOW/libs/necessaryLib/lib/osx</string>
-						<string>../../../addons/ofxESPNOW/libs/necessaryLib/lib/win_cb</string>
-						<string>../../../addons/ofxESPNOW/libs/necessaryLib/src</string>
+						<string>../../../addons/ofxESPNOW/libs/ESPNOW_lib</string>
+						<string>../../../addons/ofxESPNOW/libs/ESPNOW_lib/src</string>
+						<string>../../../addons/ofxESPNOW/libs/ESPNOW_lib/src/Includes</string>
 						<string>../../../addons/ofxESPNOW/src</string>
 					</array>
 					<key>MACOSX_DEPLOYMENT_TARGET</key>
@@ -3286,12 +3321,9 @@ fi
 						<string>src</string>
 						<string>src</string>
 						<string>../../../addons/ofxESPNOW/libs</string>
-						<string>../../../addons/ofxESPNOW/libs/necessaryLib</string>
-						<string>../../../addons/ofxESPNOW/libs/necessaryLib/include</string>
-						<string>../../../addons/ofxESPNOW/libs/necessaryLib/lib</string>
-						<string>../../../addons/ofxESPNOW/libs/necessaryLib/lib/osx</string>
-						<string>../../../addons/ofxESPNOW/libs/necessaryLib/lib/win_cb</string>
-						<string>../../../addons/ofxESPNOW/libs/necessaryLib/src</string>
+						<string>../../../addons/ofxESPNOW/libs/ESPNOW_lib</string>
+						<string>../../../addons/ofxESPNOW/libs/ESPNOW_lib/src</string>
+						<string>../../../addons/ofxESPNOW/libs/ESPNOW_lib/src/Includes</string>
 						<string>../../../addons/ofxESPNOW/src</string>
 					</array>
 					<key>MACOSX_DEPLOYMENT_TARGET</key>
@@ -3319,7 +3351,9 @@ fi
 				<array>
 					<string>E4B69E200A3A1BDC003C02F2</string>
 					<string>E4B69E210A3A1BDC003C02F2</string>
-					<string>5A770E555858278E14817593</string>
+					<string>C4C0797F24E91B0750275B20</string>
+					<string>25EA7089D4B75A2DA58902F8</string>
+					<string>AA176F84D9348D774A8BDCB1</string>
 					<string>A0A2EF562153F6511C3E59D7</string>
 				</array>
 				<key>isa</key>
@@ -3422,12 +3456,9 @@ fi
 						<string>src</string>
 						<string>src</string>
 						<string>../../../addons/ofxESPNOW/libs</string>
-						<string>../../../addons/ofxESPNOW/libs/necessaryLib</string>
-						<string>../../../addons/ofxESPNOW/libs/necessaryLib/include</string>
-						<string>../../../addons/ofxESPNOW/libs/necessaryLib/lib</string>
-						<string>../../../addons/ofxESPNOW/libs/necessaryLib/lib/osx</string>
-						<string>../../../addons/ofxESPNOW/libs/necessaryLib/lib/win_cb</string>
-						<string>../../../addons/ofxESPNOW/libs/necessaryLib/src</string>
+						<string>../../../addons/ofxESPNOW/libs/ESPNOW_lib</string>
+						<string>../../../addons/ofxESPNOW/libs/ESPNOW_lib/src</string>
+						<string>../../../addons/ofxESPNOW/libs/ESPNOW_lib/src/Includes</string>
 						<string>../../../addons/ofxESPNOW/src</string>
 					</array>
 					<key>ICON</key>
@@ -3447,8 +3478,6 @@ fi
 						<string>$(OF_CORE_LIBS)</string>
 						<string>$(OF_CORE_FRAMEWORKS)</string>
 						<string>$(LIB_OF_DEBUG)</string>
-						<string>../../../addons/ofxESPNOW/libs/necessaryLib/lib/osx/static_necessaryLib1.a</string>
-						<string>../../../addons/ofxESPNOW/libs/necessaryLib/lib/osx/static_necessaryLib2.a</string>
 					</array>
 					<key>PRODUCT_NAME</key>
 					<string>$(TARGET_NAME)Debug</string>
@@ -3484,12 +3513,9 @@ fi
 						<string>src</string>
 						<string>src</string>
 						<string>../../../addons/ofxESPNOW/libs</string>
-						<string>../../../addons/ofxESPNOW/libs/necessaryLib</string>
-						<string>../../../addons/ofxESPNOW/libs/necessaryLib/include</string>
-						<string>../../../addons/ofxESPNOW/libs/necessaryLib/lib</string>
-						<string>../../../addons/ofxESPNOW/libs/necessaryLib/lib/osx</string>
-						<string>../../../addons/ofxESPNOW/libs/necessaryLib/lib/win_cb</string>
-						<string>../../../addons/ofxESPNOW/libs/necessaryLib/src</string>
+						<string>../../../addons/ofxESPNOW/libs/ESPNOW_lib</string>
+						<string>../../../addons/ofxESPNOW/libs/ESPNOW_lib/src</string>
+						<string>../../../addons/ofxESPNOW/libs/ESPNOW_lib/src/Includes</string>
 						<string>../../../addons/ofxESPNOW/src</string>
 					</array>
 					<key>ICON</key>
@@ -3509,8 +3535,6 @@ fi
 						<string>$(OF_CORE_LIBS)</string>
 						<string>$(OF_CORE_FRAMEWORKS)</string>
 						<string>$(LIB_OF)</string>
-						<string>../../../addons/ofxESPNOW/libs/necessaryLib/lib/osx/static_necessaryLib1.a</string>
-						<string>../../../addons/ofxESPNOW/libs/necessaryLib/lib/osx/static_necessaryLib2.a</string>
 					</array>
 					<key>PRODUCT_NAME</key>
 					<string>$(TARGET_NAME)</string>
