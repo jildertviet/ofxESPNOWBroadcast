@@ -15,11 +15,11 @@
 # and the PG will write to the console the kind of error and in which line it is
 
 meta:
-	ADDON_NAME = ofxESPNOW
+	ADDON_NAME = ofxESPNOWBroadcast
 	ADDON_DESCRIPTION = x
 	ADDON_AUTHOR =
 	ADDON_TAGS = "addon" "template"
-	ADDON_URL = https://github.com/jildertviet/ofxESPNOW
+	ADDON_URL = https://github.com/jildertviet/ofxESPNOWBroadcast
 
 common:
 	# dependencies with other addons, a list of them separated by spaces
@@ -100,4 +100,3 @@ osx:
 	# osx/iOS only, any framework that should be included in the project
 	# ADDON_FRAMEWORKS =
 ios:
-tvos:

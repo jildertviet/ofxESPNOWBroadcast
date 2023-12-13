@@ -1,68 +1,47 @@
 #include "ofApp.h"
 
-
 //--------------------------------------------------------------
-void ofApp::setup(){
+void ofApp::setup() {
   cout << "First" << endl;
-    sender.init();
-    ofSetFrameRate(30);
-    cout << "Starting ofxESPNOW example" << endl;
+  sender.init();
+  ofSetFrameRate(30);
+  cout << "Starting ofxESPNOWBroadcast example" << endl;
 }
 
 //--------------------------------------------------------------
-void ofApp::update(){
-    if(ofGetFrameNum() % 30 == 0){
-        cout << "Send" << endl;
-        // sender.send();
-    }
+void ofApp::update() {
+  if (ofGetFrameNum() % 30 == 0) {
+    cout << "Send" << endl;
+    // sender.send();
+  }
 }
 
 //--------------------------------------------------------------
-void ofApp::draw(){
-
-}
+void ofApp::draw() {}
 
 //--------------------------------------------------------------
-void ofApp::keyPressed(int key){
-
-}
+void ofApp::keyPressed(int key) {}
 
 //--------------------------------------------------------------
-void ofApp::keyReleased(int key){
-
-}
+void ofApp::keyReleased(int key) {}
 
 //--------------------------------------------------------------
-void ofApp::mouseMoved(int x, int y){
-
-}
+void ofApp::mouseMoved(int x, int y) {}
 
 //--------------------------------------------------------------
-void ofApp::mouseDragged(int x, int y, int button){
-
-}
+void ofApp::mouseDragged(int x, int y, int button) {}
 
 //--------------------------------------------------------------
-void ofApp::mousePressed(int x, int y, int button){
-
-}
+void ofApp::mousePressed(int x, int y, int button) {}
 
 //--------------------------------------------------------------
-void ofApp::mouseReleased(int x, int y, int button){
-
-}
+void ofApp::mouseReleased(int x, int y, int button) {}
 
 //--------------------------------------------------------------
-void ofApp::windowResized(int w, int h){
-
-}
+void ofApp::windowResized(int w, int h) {}
 
 //--------------------------------------------------------------
-void ofApp::gotMessage(ofMessage msg){
-
-}
+void ofApp::gotMessage(ofMessage msg) {}
 
 //--------------------------------------------------------------
-void ofApp::dragEvent(ofDragInfo dragInfo){
-
-}
+void ofApp::dragEvent(ofDragInfo dragInfo) {}

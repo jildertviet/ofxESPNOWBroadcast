@@ -2,21 +2,21 @@
 #include <stdio.h>
 
 #include <assert.h>
-#include <unistd.h>
 #include <sys/time.h>
+#include <unistd.h>
 
 #include <thread>
 
 #include "ESPNOW_manager.h"
 #include "ESPNOW_types.h"
 
-class ofxESPNOWSender{
+class ofxESPNOWBroadcastSender {
 public:
-    ofxESPNOWSender();
-    void init();
-    void exit();
-    
-    void send();
-    
-    ESPNOW_manager *handler;
+  ofxESPNOWBroadcastSender();
+  void init();
+  void exit();
+
+  void send();
+
+  ESPNOW_manager *handler;
 };
