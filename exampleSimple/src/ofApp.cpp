@@ -2,17 +2,15 @@
 
 //--------------------------------------------------------------
 void ofApp::setup() {
-  cout << "First" << endl;
-  sender.init();
-  ofSetFrameRate(30);
-  cout << "Starting ofxESPNOWBroadcast example" << endl;
+  sender.init("todo");
+  ofSetFrameRate(60);
 }
 
 //--------------------------------------------------------------
 void ofApp::update() {
   if (ofGetFrameNum() % 30 == 0) {
     cout << "Send" << endl;
-    // sender.send();
+    sender.testSend();
   }
 }
 

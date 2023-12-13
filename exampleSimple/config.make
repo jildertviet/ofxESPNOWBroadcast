@@ -76,7 +76,7 @@ OF_ROOT = /home/jildert/of_v0.12.0-rc1_linux64gcc6_release/addons/..
 # add a runtime path to search for those shared libraries, since they aren't 
 # incorporated directly into the final executable application binary.
 ################################################################################
-PROJECT_LDFLAGS=-Wl,-rpath=./libs/Linux-ESPNOW/ESPNOW_lib/src
+# PROJECT_LDFLAGS=-Wl,-rpath=./libs/Linux-ESPNOW/ESPNOW_lib/src
 
 ################################################################################
 # PROJECT DEFINES

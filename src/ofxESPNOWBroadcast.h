@@ -13,10 +13,11 @@
 class ofxESPNOWBroadcastSender {
 public:
   ofxESPNOWBroadcastSender();
-  void init();
+  void init(std::string interfaceName);
   void exit();
 
-  void send();
+  void testSend();
 
+  std::string interfaceName = "";
   ESPNOW_manager *handler;
 };
