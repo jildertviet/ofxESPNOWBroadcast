@@ -1,22 +1,25 @@
 #include "ofxESPNOWBroadcast.h"
-#include <iostream> // std::cout, std::end
 
 using namespace std;
 
-static uint8_t my_mac[6] = {0xF8, 0x1A, 0x67, 0xb7, 0xEB, 0x0B};
-static uint8_t dest_mac[6] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF};
 // static uint8_t ESP_mac[6] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF};
 
 ofxESPNOWBroadcastSender::ofxESPNOWBroadcastSender() {}
 
-void ofxESPNOWBroadcastSender::init(std::string interfaceName) {
-  nice(-20);
-  char *ifName = "wlp166s0";
-  handler = new ESPNOW_manager(ifName, DATARATE_1Mbps, CHANNEL_freq_1, my_mac,
-                               dest_mac, false);
-  handler->start();
-}
-
+// void ofxESPNOWBroadcastSender::init(std::string interfaceName) {
+//   nice(-20);
+//   std::string ifName = "wlp166s0";
+//   cout << ifName.length() << endl;
+//   char *cstr = new char[ifName.length() + 1];
+//   strcpy(cstr, ifName.c_str());
+//   cout << "a" << endl;
+//   handler = new ESPNOW_manager(cstr, DATARATE_1Mbps, CHANNEL_freq_1, my_mac,
+//                                dest_mac, false);
+//   cout << "x" << endl;
+//   delete[] cstr;
+//   handler->start();
+// }
+//
 void ofxESPNOWBroadcastSender::exit() { handler->end(); }
 
 void ofxESPNOWBroadcastSender::testSend() {

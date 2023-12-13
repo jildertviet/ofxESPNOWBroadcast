@@ -104,7 +104,7 @@ OF_ROOT = /home/jildert/of_v0.12.0-rc1_linux64gcc6_release/addons/..
 #
 #   Note: Leave a leading space when adding list items with the += operator
 ################################################################################
-# PROJECT_CFLAGS = 
+# PROJECT_CFLAGS += -g -Wall -std=c++11
 
 ################################################################################
 # PROJECT OPTIMIZATION CFLAGS
@@ -138,4 +138,4 @@ OF_ROOT = /home/jildert/of_v0.12.0-rc1_linux64gcc6_release/addons/..
 #   Note: Leave a leading space when adding list items with the += operator
 ################################################################################
 # PROJECT_CXX = 
-# PROJECT_CC = 
+# PROJECT_CC = g++
