@@ -2,19 +2,34 @@
 
 //--------------------------------------------------------------
 void ofApp::setup() {
-  sender.init("wlp166s0");
+  espnowSender.init("wlp166s0");
+  oscReceiver.setup(7997);
   // ofSetFrameRate(60);
+  cout << "Send data from SC with: n.sendMsg(\"/espnow\", "
+          "Int8Array.newFrom([1,2,3]));"
+       << endl;
 }
 
 //--------------------------------------------------------------
 void ofApp::update() {
-  if (ofGetFrameNum() % 30 == 0) {
-    cout << "Send" << endl;
-    sender.testSend();
+  while (oscReceiver.hasWaitingMessages()) {
+    ofxOscMessage m;
+    oscReceiver.getNextMessage(m);
+    if (m.getAddress() == "/espnow") {
+      ofBuffer b = m.getArgAsBlob(0);
+      for (int i = 0; i < b.size(); i++) {
+        cout << (int)b.getData()[i] << " ";
+      }
+      cout << endl;
+      espnowSender.send(b.getData(), b.size());
+
+      cout << "Send" << endl;
+    }
   }
+  // espnowSender.testSend();
 }
 
-void ofApp::exit() { sender.exit(); }
+void ofApp::exit() { espnowSender.exit(); }
 
 //--------------------------------------------------------------
 void ofApp::draw() {}

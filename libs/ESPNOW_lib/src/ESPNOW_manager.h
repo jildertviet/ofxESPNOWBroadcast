@@ -29,24 +29,16 @@ public:
                  uint8_t src_mac[6], uint8_t dst_mac[6], bool filterOn) {
     default_values();
     set_interface(interface);
-    std::cout << "Set channel" << std::endl;
     set_channel(channel_freq);
-    std::cout << "Set datarate" << std::endl;
     set_datarate(datarate);
-
-    std::cout << "Set src_mac" << std::endl;
     set_src_mac(src_mac);
-
-    std::cout << "Set dst_mac" << std::endl;
     set_dst_mac(dst_mac);
 
     if (filterOn) {
       set_filter(dst_mac, src_mac);
     } else {
-      std::cout << "Set filter NULL" << std::endl;
       set_filter(NULL, NULL);
     }
-    std::cout << "Const done" << std::endl;
   }
 
   void unset_filter();

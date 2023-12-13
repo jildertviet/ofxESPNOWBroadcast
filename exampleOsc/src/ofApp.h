@@ -2,6 +2,7 @@
 
 #include "ofMain.h"
 #include "ofxESPNOWBroadcast.h"
+#include "ofxOsc.h"
 
 class ofApp : public ofBaseApp {
 public:
@@ -20,5 +21,6 @@ public:
   void dragEvent(ofDragInfo dragInfo);
   void gotMessage(ofMessage msg);
 
-  ofxESPNOWBroadcastSender sender;
+  ofxESPNOWBroadcastSender espnowSender;
+  ofxOscReceiver oscReceiver;
 };

@@ -22,10 +22,8 @@
   MAC == NULL ? 0 : (((((MAC[2] << 8) | MAC[3]) << 8) | MAC[4]) << 8) | MAC[5]
 
 void ESPNOW_manager::set_interface(char *interface) {
-  std::cout << "Setting interface name" << std::endl;
   this->interface = (char *)malloc(strlen(interface) * sizeof(char));
   strcpy(this->interface, interface);
-  std::cout << "Done setting interface name" << std::endl;
 }
 
 void ESPNOW_manager::set_recv_callback(void (*callback)(uint8_t src_mac[6],
@@ -36,7 +34,7 @@ void ESPNOW_manager::set_recv_callback(void (*callback)(uint8_t src_mac[6],
 
 void ESPNOW_manager::unset_filter() {
   if (this->bpf.filter != NULL) {
-    // free(this->bpf.filter);
+    // free(this->bpf.filter); // Renable this!?
     this->bpf.filter = NULL;
   }
   this->bpf.len = 0;
@@ -47,7 +45,6 @@ void ESPNOW_manager::set_filter(uint8_t *src_mac, uint8_t *dst_mac) {
   // wlan[32]=221 and wlan[33:4]&0xffffff = 0x18fe34 and wlan[37]=0x4 and wlan
   // dst 11:22:33:44:55:66 and wlan src 77:88:99:aa:bb:cc' -dd
   unset_filter();
-  std::cout << "After unset" << std::endl;
   this->bpf.len = 53;
 
   uint32_t MSB_dst = MAC_2_MSBytes(dst_mac);
@@ -88,12 +85,9 @@ void ESPNOW_manager::set_filter(uint8_t *src_mac, uint8_t *dst_mac) {
       {jeq_src, 0, 3, LSB_src},   {0x48, 0, 0, 0x0000000a},
       {jeq_src, 0, 1, MSB_src},   {0x6, 0, 0, 0x00040000},
       {0x6, 0, 0, 0x00000000}};
-  std::cout << "Set bpf filter" << std::endl;
   this->bpf.filter = (sock_filter *)malloc(sizeof(sock_filter) * this->bpf.len);
   memcpy(this->bpf.filter, temp_code,
          sizeof(struct sock_filter) * this->bpf.len);
-
-  std::cout << "Done setting bpf filter" << std::endl;
 }
 
 void ESPNOW_manager::start() {
