@@ -29,3 +29,7 @@ Therefore the same license applies.
 ## Test
 I've tested this on my Framework (13) laptop running Linux Mint 21.2.
 This model has a AX210 WiFi chip.
+
+## Warning
+Some WiFi cards don't work, I don't know why. My Ralink RT5370 doesn't seem to do the job.  
+An issue I've observed is that the raw packet misses 5 bytes compared to the packet send out.  
