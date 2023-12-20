@@ -109,3 +109,4 @@ Desktop.ini
 tags
 .travis.yml
 .appveyor.yml
+tags.lock
