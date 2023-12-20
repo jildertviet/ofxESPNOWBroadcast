@@ -2,7 +2,7 @@
 
 //--------------------------------------------------------------
 void ofApp::setup() {
-  espnowSender.init("wlp166s0");
+  espnowSender.init("wlp166s0", DATARATE_1Mbps, CHANNEL_freq_1);
   oscReceiver.setup(7997);
   ofSetFrameRate(120);
   cout << "1. Send data from SC with: n.sendMsg(\"/espnow\", "

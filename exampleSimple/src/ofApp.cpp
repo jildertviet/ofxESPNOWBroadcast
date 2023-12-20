@@ -2,8 +2,8 @@
 
 //--------------------------------------------------------------
 void ofApp::setup() {
-  sender.init("wlp166s0");
-  // ofSetFrameRate(60);
+  sender.init("wlp166s0", DATARATE_1Mbps, CHANNEL_freq_1);
+  ofSetFrameRate(60);
 }
 
 //--------------------------------------------------------------
