@@ -5,7 +5,7 @@ Linux only.
 
 ## Description
 This add-on enables you to send ESPNOW from a Linux computer to ESP32 and/or ESP8266.  
-This way you don't need a USB<>ESPNOW-bridge device.  
+This way you don't need a USB⇿ESPNOW-bridge device.  
 
 ## Usage
 1. Put your WiFi card (the example below uses _wlp166s0_) into monitor mode.
@@ -28,3 +28,4 @@ Therefore the same license applies.
 
 ## Test
 I've tested this on my Framework (13) laptop running Linux Mint 21.2.
+This model has a AX210 WiFi chip.

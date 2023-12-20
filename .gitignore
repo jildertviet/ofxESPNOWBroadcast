@@ -107,3 +107,5 @@ Desktop.ini
 *.sqlite
 
 tags
+.travis.yml
+.appveyor.yml

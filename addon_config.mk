@@ -16,8 +16,8 @@
 
 meta:
 	ADDON_NAME = ofxESPNOWBroadcast
-	ADDON_DESCRIPTION = x
-	ADDON_AUTHOR =
+	ADDON_DESCRIPTION = "Send ESPNOW via WiFi card"
+	ADDON_AUTHOR = "Jildert Viet"
 	ADDON_TAGS = "addon" "template"
 	ADDON_URL = https://github.com/jildertviet/ofxESPNOWBroadcast
 
@@ -29,7 +29,7 @@ common:
 	# include search paths, this will be usually parsed from the file system
 	# but if the addon or addon libraries need special search paths they can be
 	# specified here separated by spaces or one per line using +=
-	# ADDON_INCLUDES += ./libs/ESPNOW_lib/src/
+	# ADDON_INCLUDES = 
 
 	# any special flag that should be passed to the compiler when using this
 	# addon
@@ -47,7 +47,7 @@ common:
 	# in the src folders in libs and the root of the addon. if your addon needs
 	# to include files in different places or a different set of files per platform
 	# they can be specified here
-  # ADDON_SOURCES = ./libs/ESPNOW_lib/src
+  # ADDON_SOURCES = 
 
 	# source files that will be included as C files explicitly
 	# ADDON_C_SOURCES =
