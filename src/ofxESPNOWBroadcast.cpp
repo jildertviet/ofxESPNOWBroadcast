@@ -3,13 +3,14 @@ using namespace std;
 
 ofxESPNOWBroadcastSender::ofxESPNOWBroadcastSender() {}
 
-void ofxESPNOWBroadcastSender::init(std::string interfaceName) {
+void ofxESPNOWBroadcastSender::init(std::string interfaceName, char dataRate,
+                                    int channel) {
   nice(-20);
 
   char *cstr = new char[interfaceName.length() + 1];
   strcpy(cstr, interfaceName.c_str());
-  handler = new ESPNOW_manager(cstr, DATARATE_1Mbps, CHANNEL_freq_1, my_mac,
-                               dest_mac, false);
+  handler =
+      new ESPNOW_manager(cstr, dataRate, channel, my_mac, dest_mac, false);
   delete[] cstr;
   handler->start();
 }

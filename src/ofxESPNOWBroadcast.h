@@ -17,7 +17,8 @@ static uint8_t dest_mac[6] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF};
 class ofxESPNOWBroadcastSender {
 public:
   ofxESPNOWBroadcastSender();
-  void init(std::string interfaceName);
+  void init(std::string interfaceName, char dataRate = DATARATE_1Mbps,
+            int channel = CHANNEL_freq_1);
   void exit();
 
   void testSend();
